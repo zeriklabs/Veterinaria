@@ -1,0 +1,272 @@
+{
+	"info": {
+		"_postman_id": "veterinaria-api-collection-v1",
+		"name": "Veterinaria API - Render",
+		"description": "Colección completa de pruebas para el CRUD de Mascotas y Medicamentos desplegado en Render.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Mascotas",
+			"item": [
+				{
+					"name": "1. Listar Mascotas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://veterinaria-e4j8.onrender.com/api/mascotas",
+							"protocol": "https",
+							"host": [
+								"veterinaria-e4j8",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"mascotas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "2. Crear Mascota",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"Firulais\",\n    \"especie\": \"Perro\",\n    \"raza\": \"Labrador\",\n    \"edad\": 5,\n    \"nombreDueno\": \"Javier Pérez\"\n}"
+						},
+						"url": {
+							"raw": "https://veterinaria-e4j8.onrender.com/api/mascotas",
+							"protocol": "https",
+							"host": [
+								"veterinaria-e4j8",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"mascotas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "3. Buscar Mascota por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://veterinaria-e4j8.onrender.com/api/mascotas/1",
+							"protocol": "https",
+							"host": [
+								"veterinaria-e4j8",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"mascotas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4. Actualizar Mascota",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"Firulais Actualizado\",\n    \"especie\": \"Perro\",\n    \"raza\": \"Labrador Retriever\",\n    \"edad\": 6,\n    \"nombreDueno\": \"Javier Pérez\"\n}"
+						},
+						"url": {
+							"raw": "https://veterinaria-e4j8.onrender.com/api/mascotas/1",
+							"protocol": "https",
+							"host": [
+								"veterinaria-e4j8",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"mascotas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "5. Eliminar Mascota",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://veterinaria-e4j8.onrender.com/api/mascotas/1",
+							"protocol": "https",
+							"host": [
+								"veterinaria-e4j8",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"mascotas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Medicamentos",
+			"item": [
+				{
+					"name": "1. Listar Medicamentos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://veterinaria-e4j8.onrender.com/api/medicamentos",
+							"protocol": "https",
+							"host": [
+								"veterinaria-e4j8",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"medicamentos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "2. Crear Medicamento",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"Amoxicilina 500mg\",\n    \"descripcion\": \"Antibiótico de amplio espectro\",\n    \"precio\": 150.50,\n    \"stock\": 100,\n    \"tipo\": \"Antibiótico\"\n}"
+						},
+						"url": {
+							"raw": "https://veterinaria-e4j8.onrender.com/api/medicamentos",
+							"protocol": "https",
+							"host": [
+								"veterinaria-e4j8",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"medicamentos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "3. Buscar Medicamento por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://veterinaria-e4j8.onrender.com/api/medicamentos/1",
+							"protocol": "https",
+							"host": [
+								"veterinaria-e4j8",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"medicamentos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4. Actualizar Medicamento",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"Amoxicilina 500mg Actualizado\",\n    \"descripcion\": \"Antibiótico de amplio espectro para caninos y felinos\",\n    \"precio\": 165.00,\n    \"stock\": 95,\n    \"tipo\": \"Antibiótico\"\n}"
+						},
+						"url": {
+							"raw": "https://veterinaria-e4j8.onrender.com/api/medicamentos/1",
+							"protocol": "https",
+							"host": [
+								"veterinaria-e4j8",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"medicamentos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "5. Eliminar Medicamento",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://veterinaria-e4j8.onrender.com/api/medicamentos/1",
+							"protocol": "https",
+							"host": [
+								"veterinaria-e4j8",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"medicamentos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
